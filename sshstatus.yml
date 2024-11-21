@@ -1,0 +1,8 @@
+---
+- name: checking ssh service
+  host: all
+  become: yes
+  tasks: 
+  name: status ssh service
+  service: name=httpd state=status
+  
